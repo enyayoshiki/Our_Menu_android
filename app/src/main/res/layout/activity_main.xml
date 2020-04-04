@@ -8,37 +8,45 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="お母さん食堂"
+        android:text="@string/title_name"
         android:textColor="#9B521C"
         android:layout_marginTop="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/menuText"
         android:textSize="50dp"/>
 
     <TextView
-        android:id="@+id/whatFood"
+        android:id="@+id/menuText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/what_food"
-        app:layout_constraintBottom_toTopOf="@id/whatFoodImage"
         android:layout_marginBottom="10dp"
+        android:text="@string/what_food"
+        android:textColor="#222223"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/menuImage"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:textSize="30dp"
-        android:textColor="#222223"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="30dp"/>
 
     <ImageView
-        android:id="@+id/whatFoodImage"
+        android:id="@+id/menuImage"
         android:layout_width="303dp"
         android:layout_height="236dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menuText"
+        app:layout_constraintVertical_bias="0.455"
         app:srcCompat="@drawable/cooking_mama" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
