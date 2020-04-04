@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeMenu"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/home_text"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/curryMenu"
+        android:title="@string/curry_text" >
+        <menu >
+            <item
+                android:id="@+id/curryUdonMenu"
+                android:title="@string/curry_udon_text" />
+            <item
+                android:id="@+id/dryCurryMenu"
+                android:title="@string/drycurry_text"
+        </menu>
+    </item>
+    <item
+        android:id="@+id/ramenMenu"
+        android:title="@string/ramen_text" >
+        <menu >
+            <item
+                android:id="@+id/lemonRamenMenu"
+                android:title="@string/lemonramen_text"/>
+            <item
+                android:id="@+id/gekikaraRamenMenu"
+                android:title="@string/gekikararamen_text"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nabeMenu"
+        android:title="@string/nabe_text" >
+        <menu>
+            <item
+                android:id="chankoNabeMenu"
+                android:title="@string/chanko_text"
+                />
+            <item
+                android:id="nabeyakiUdonMenu"
+                android:title="@string/nabeyakiudon_text"
+                />
+        </menu>
+
+    </item>
+</menu>
